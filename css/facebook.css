@@ -1,0 +1,135 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:45px 15px;
+    background-color: #f0f2f5;
+}
+section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section > div:first-of-type{
+    width: 250px;
+    display: flex;  
+}
+section > div > img{
+    width:100%;
+}
+section > div > form{
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+    border:none;
+    padding: 15px 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 10%);
+    width: 430px;
+    height: 430px;
+    margin: auto;
+    background-color:#ffffff;
+}
+
+.log > div:first-of-type{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 10px 0;
+}
+.log > input{
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    outline: none;
+}
+.log > button{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 48px;
+    padding: 0 16px;
+    width:100%;
+    color: #ffffff;
+}
+.log > button:hover{
+    cursor: pointer;
+    background-color:#0066ff;
+}
+.log > a:first-of-type{
+    display: flex;
+    justify-content: center;
+    color: #1877f2;
+}
+.log > a:first-of-type:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.log > div:last-of-type{
+    display: flex;
+    justify-content:space-between;
+    gap:10px;
+}
+.log > div:last-of-type > span{
+    border-top:1px solid #dadde1;
+    flex:1;
+    position: relative;
+    top:10px;
+}
+.log > a:last-of-type{
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    width: fit-content;
+    align-self: center;
+    color:white;
+}
+.log > a:last-of-type:hover{
+    cursor: pointer;
+    background-color:#3ba626;
+}
+footer{
+    display: flex;
+    flex-direction:column;
+    padding: 80px 12% 30px;
+    color: #8a8d91;
+}
+footer > *{
+    font-size: 13px !important;
+}
+
+footer > div:first-child{
+    display: flex;
+    column-gap:15px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    padding:10px 0;
+    border-bottom: 1px solid #dddfe2;
+}
+footer > div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px 0 30px;
+    column-gap: 25px;
+    row-gap: 10px;;
+}
+
+@media  screen and (width <= 900px) {
+    footer{
+      
+        padding: 60px 8% 20px;
+       
+    }
+}
